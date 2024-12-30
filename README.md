@@ -4,7 +4,7 @@
 ## Proje Açıklaması
 Bu proje, bir dijital film platformunun temel özelliklerini kullanıcı dostu bir arayüzle örnek almayı amaçlayan bir React uygulamasıdır. Kullanıcılar kategorilere göre film ve dizi içeriklerine göz atabilir, içerikleri izleyebilir ve favorilerine ekleyebilirler. Uygulama, kategori bazlı filtreleme ve içerik listeleme özelliklerine sahip dinamik bir yapıya sahiptir.
 
-### Özellikler:
+## Özellikler:
 - Kullanıcılar kategori seçerek içeriklere göz atabilir.
 - İzlemek istedikleri içerikleri favorilerine ekleyebilir.
 - İçerik detaylarına ulaşabilir.
