@@ -1,12 +1,25 @@
 <<<<<<< HEAD
-# react-clone-project
+# Dijital Film Platformu Klon Projesi
 =======
-# React + Vite
+## Proje Açıklaması
+Bu proje, bir dijital film platformunun temel özelliklerini kullanıcı dostu bir arayüzle örnek almayı amaçlayan bir React uygulamasıdır. Kullanıcılar kategorilere göre film ve dizi içeriklerine göz atabilir, içerikleri izleyebilir ve favorilerine ekleyebilirler. Uygulama, kategori bazlı filtreleme ve içerik listeleme özelliklerine sahip dinamik bir yapıya sahiptir.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Özellikler:
+- Kullanıcılar kategori seçerek içeriklere göz atabilir.
+- İzlemek istedikleri içerikleri favorilerine ekleyebilir.
+- İçerik detaylarına ulaşabilir.
+- Film ve dizi kategorileriyle ilgili dinamik filtreleme.
+- Hızlı ve kullanıcı dostu arayüz.
 
-Currently, two official plugins are available:
+## Teknolojiler
+- **React.js**: Kullanıcı arayüzü oluşturmak için kullanıldı.
+- **Redux**: Uygulama durum yönetimi için kullanıldı.
+- **React Router**: Sayfa geçişleri ve URL parametrelerini yönetmek için kullanıldı.
+- **Material UI**: Kullanıcı arayüzü bileşenleri için kullanıldı.
+- **JSON**: Veriler, bir JSON dosyasından alındı.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> af4b8ea (first committ)
+## Kurulum
+Bu projeyi bilgisayarınıza klonladıktan sonra "npm run dev" komutu ile çalıştırabilirsiniz.
+
+
+>>>>>>> 
