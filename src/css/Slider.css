@@ -1,0 +1,159 @@
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slide Style */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    transition: transform 1s ease-in-out;
+}
+
+.slide.active {
+    left: 0;
+}
+
+.slide.previous {
+    left: -100%;
+}
+
+.slide.next {
+    left: 100%;
+}
+
+/* Text Overlay */
+.slide-text {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    max-width: 470px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-text p{
+    font-size: 1.55rem;
+    line-height: 1.85rem;
+    min-height: 100px;
+}
+
+.slide-text img{
+    max-width: 80%;
+}
+
+.slide-button-play {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }
+  
+  .slide-button-play .MuiSvgIcon-root {
+    font-size: 30px; 
+    margin-right: 8px;
+  }
+
+  .slide-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+/* Dark Overlay */
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Gradient Transition to Blue */
+.slider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(transparent, #081329);
+    z-index: 2;
+}
+
+/* Controls */
+.controls {
+    position: absolute;
+    bottom: 120px;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.control-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-dot.active {
+    background-color: white;
+} 
+
+.slide-icon{
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+@media (max-width: 700px){
+    .slider{
+        height: 300px;
+    }
+    .slide-text{
+        z-index: 15;
+        top: 75%;
+        left: 20px;
+    }
+    .slide-text img{
+        height: 48px;
+    }
+    .slide-text p{z-index: 1555;
+        font-size: 14px;
+        line-height: 1.2rem;
+        min-height: 100px;
+        color: white;
+    }
+    .slide-button{
+        display: none;
+    }
+    .controls{
+        bottom: 20px;
+    }
+    .control-dot {
+        width: 9px;
+        height: 9px;
+    }
+}

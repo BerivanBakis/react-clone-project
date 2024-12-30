@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Featured Movie 1",
+      "category": "Action",
+      "image": "/assets/images/featured1.jpg",
+      "rating": 7.9,
+      "description": "An action-packed blockbuster with a gripping storyline.",
+      "link": "https://example.com/watch/featured1"
+    },
+    {
+      "id": 2,
+      "title": "Featured TV Show 1",
+      "category": "Drama",
+      "image": "/assets/images/featured2.jpg",
+      "rating": 8.5,
+      "description": "A critically acclaimed drama series that has won numerous awards.",
+      "link": "https://example.com/watch/featured2"
+    }
+  ]
+  

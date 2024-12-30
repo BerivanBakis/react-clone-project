@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Action",
+      "image": "/assets/images/category-action.jpg",
+      "movies": [1],
+      "tvShows": [1]
+    },
+    {
+      "id": 2,
+      "name": "Comedy",
+      "image": "/assets/images/category-comedy.jpg",
+      "movies": [2],
+      "tvShows": []
+    },
+    {
+      "id": 3,
+      "name": "Drama",
+      "image": "/assets/images/category-drama.jpg",
+      "movies": [],
+      "tvShows": [1, 2]
+    }
+  ]
+  

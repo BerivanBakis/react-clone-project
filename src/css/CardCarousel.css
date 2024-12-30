@@ -1,0 +1,155 @@
+.carousel-section{
+  width: 90%;
+  margin: 60px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 22px auto;
+}
+
+.carousel-title{
+  color: #fff;
+  font-size: 22px;
+}
+
+.carousel-track {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel-cards {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-hover-bar {
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  transition: bottom 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-hover-bar * {
+  margin: 0 5px;
+}
+
+.card-bar-icon{
+  background-color: #242630;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-bar-icon:hover{
+  color: #242630;
+  background-color: #fff;
+}
+
+.carousel-card:hover .card-hover-bar {
+  bottom: 0;
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 85px;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 100%;
+  color: transparent;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-arrow:hover {
+  background-color: #0000005f;
+  color: #fff;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .carousel-section{
+    margin: 65px auto;
+    margin-left: 15px;
+    width: 100%;
+  }
+
+  .carousel-card {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .carousel-cards {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-card {
+    margin-right: 15px;
+  }
+  .carousel-cards {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .carousel-card {
+    margin-right: 20px;
+  }
+
+  .carousel-cards {
+    transform: translateX(0);
+  }
+}
+
